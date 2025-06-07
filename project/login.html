@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Pets A&C</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body class="auth-body" style="background-image: url('../petsbg.jpg'); background-size: cover;">
+    <div class="auth-container">
+        <h2>Login</h2>
+        <form onsubmit="return checkLogin()">
+            <input type="text" placeholder="Username" id="loginUser" required>
+            <input type="password" placeholder="Password" id="loginPass" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Signup here</a></p>
+    </div>
+    <script>
+        function checkLogin() {
+            const u = document.getElementById("loginUser").value;
+            const p = document.getElementById("loginPass").value;
+            if (u === "user30" && p === "user30") {
+                window.location.href = "Random.html";
+                return false;
+            } else {
+                alert("Invalid credentials");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup - Pets A&C</title>
+    <link rel="stylesheet" href="random.css">
+</head>
+<body class="auth-body">
+    <div class="auth-container">
+        <h2>Signup</h2>
+        <form onsubmit="return goToLogin()">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button type="submit">Signup</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+    <script>
+        function goToLogin() {
+            window.location.href = "login.html";
+            return false;
+        }
+    </script>
+</body>
+</html>
