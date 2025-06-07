@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>college fights</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      margin-top: 50px;
+    }
+    .team {
+      display: inline-block;
+      margin: 0 50px;
+      padding: 20px;
+      border: 2px solid #333;
+      border-radius: 10px;
+      background-color: #fff;
+    }
+    .team h2 {
+      margin: 10px 0;
+    }
+    .score {
+      font-size: 48px;
+      margin: 20px 0;
+    }
+    .button {
+      font-size: 18px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="team" id="teamA">
+    <h2>NAGARAJU</h2>
+    <div class="score" id="scoreA">0</div>
+    <button class="button" onclick="increaseScore('A')">BET</button>
+  </div>
+
+  <div class="team" id="teamB">
+    <h2>RUPESH</h2>
+    <div class="score" id="scoreB">0</div>
+    <button class="button" onclick="increaseScore('B')">BET</button>
+  </div>
+
+  <script>
+    let scoreA = 0;
+    let scoreB = 0;
+
+    function increaseScore(team) {
+      if (team === 'A') {
+        scoreA++;
+        document.getElementById('scoreA').innerText = scoreA;
+      } else if (team === 'B') {
+        scoreB++;
+        document.getElementById('scoreB').innerText = scoreB;
+      }
+    }
+  </script>
+
+</body>
+</html>
