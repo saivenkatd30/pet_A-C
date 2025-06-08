@@ -1,0 +1,148 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bolder;
+
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 15px 40px;
+}
+
+.logo {
+  background: #000;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.pets-logo {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.logo img {
+  height: 100px; 
+  margin-right: 18px;
+}
+
+.logo-text {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 18px;
+  letter-spacing: 1px;
+}
+
+
+nav a {
+  margin:  15px;
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: rgb(13, 13, 13);
+  box-shadow: #f3eda8 2px 2px 5px;
+  background-color: whitesmoke;
+}
+
+.auth-buttons {
+  margin-left: 10px;
+  padding: 8px 14px;
+  border-radius: 5px;
+}
+
+.sign-in {
+  background-color: #fff;
+  color: #000;
+}
+
+.sign-up {
+  background-color: black;
+  color: #fff;
+}
+
+.pets-intro{
+font-size: 50px;;
+  text-align: center;
+  padding: 100px 20px;
+}
+.section {
+  text-size-adjust: 100px;
+  background-color: rgba(255,255,255,0.8); 
+  color: #000;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #f3eda8;
+  padding: 25px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faqs {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.faq-items {
+  max-width: 800px;
+  margin:  auto;
+  text-align: left;
+}
+
+.faq {
+  margin-bottom: 25px;
+}
+
+.faq h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
